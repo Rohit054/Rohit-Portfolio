@@ -7,9 +7,11 @@ const messages = [
   "Problem Solver",
   "Passionate Coder"
 ]; // Array of messages to display
+
 const typingSpeed = 150; // Adjust the typing speed (in milliseconds)
 let messageIndex = 0;
 let characterIndex = 0;
+
 const typingEffect = () => {
   if (characterIndex < messages[messageIndex].length) {
     document.getElementById("typing-message").textContent += messages[
